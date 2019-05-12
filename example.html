@@ -1,0 +1,60 @@
+<html>
+    <head>  
+        <title>example_practise</title>
+        <script type="text/javascript">
+        function person(name , age)                           //constructor or blueprint of function
+        {
+            this.name= name;
+            this.age= age;
+        }
+
+        var kalam= new person("Kalam",80);
+        var gandhi= new person("Gandhi",70);
+        
+        
+        </script>
+    </head>
+    <body onUnload="alert('we just unloaded')">
+        <script type="text/javascript">
+        document.write("hello india" + "<br>");
+
+
+       var x;
+       x=20;
+
+       var y;
+       y="tuna";
+    
+       document.write(x+"   is age of   "+y);
+
+       document.write("<br>"+y+"is the \"name\""+"<br>" + x+"   is the age "      );
+
+       function funky()
+       {
+           alert(" this ia a funky one");
+       }
+
+       function bio(name, age)
+       {
+           alert("my name is  "+ name + ", my age is  "+age);
+       }
+
+       
+bio("kalam", 20);
+
+document.write("<br><br>"+kalam.age);
+document.write("<br>"+gandhi.name);
+        </script>
+        <form>
+            <input type="button" value="click me"   onclick="funky()">
+            <br>
+            <br>
+
+            <input type="button" value="on mouse over"   onmouseover="alert('this is sample onmouseover')">
+            <br>
+            <br>
+
+            <input type="button" value="on mouse out"   onmouseout="alert('this is sample onmouseout  goodbye')">
+        </form>
+    </body>
+</html>
